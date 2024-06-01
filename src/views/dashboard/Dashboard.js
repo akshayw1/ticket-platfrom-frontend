@@ -6,21 +6,19 @@ import PageContainer from 'src/components/container/PageContainer';
 import SalesOverview from './components/SalesOverview';
 import YearlyBreakup from './components/YearlyBreakup';
 import RecentTransactions from './components/RecentTransactions';
-import ProductPerformance from './components/ProductPerformance';
+import ListTickets from './components/ListTickets';
 import Blog from './components/Blog';
 import MonthlyEarnings from './components/MonthlyEarnings';
-
 
 const Dashboard = () => {
   return (
     <PageContainer title="Dashboard" description="this is Dashboard">
       <Box>
         <Grid container spacing={3}>
-        <Grid item xs={12} lg={12}>
-            <ProductPerformance />
+          <Grid item xs={12} lg={12}>
+            <ListTickets />
           </Grid>
-        
-        
+
           <Grid item xs={12} lg={6}>
             <Grid container spacing={3}>
               <Grid item xs={12}>
@@ -34,7 +32,6 @@ const Dashboard = () => {
           <Grid item xs={12} lg={6}>
             <RecentTransactions />
           </Grid>
-        
         </Grid>
       </Box>
     </PageContainer>
